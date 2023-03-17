@@ -1,0 +1,45 @@
+footer{
+    background-color: #C8E0C5;
+}
+.wrapper{
+    background-image: url(../background/newli_bg.png);
+    background-size: contain;
+    background-position: center bottom -5px;
+    background-repeat: no-repeat;
+}
+.wrapper .border{
+    width: 900px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #649D6A;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 80px 50px;
+}
+.wrapper .border h3{
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 100px;
+}
+.wrapper .border iframe{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.wrapper .border p{
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    line-height: 1.6;
+    text-align: justify;
+}
+.wrapper .border a{
+    display: block;
+    background-color: #649D6A;
+    color: white;
+    width: 80px;
+    line-height: 2;
+    text-align: center;
+    border-radius: 10px;
+    float: right;
+    font-size: 14px;
+}

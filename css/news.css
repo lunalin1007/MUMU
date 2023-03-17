@@ -1,0 +1,73 @@
+footer{
+    background-color: #89C681;
+}
+.wrapper{
+    background-image: url(../background/newsbg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+}
+.wrapper .list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 40px 0; 
+}
+.wrapper .list li{
+    width: 280px;
+    height: 300px;
+    border: 10px solid #649D6A; 
+    margin: 25px 15px;
+    border-radius: 20px;
+    background-color: white;
+    padding-top: 15px;
+    transition: all .5s;
+}
+.wrapper .list li:hover{
+    transform: translateY(-3%);
+}
+.list li a{
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+    text-decoration: none;
+    line-height: 1.6;
+    color: black;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 700;
+} 
+.list li:hover a{
+    color:#649D6A;
+}
+.list li img{
+    width: 100%;
+    display: block;
+    padding-bottom: 15px;
+    transition: all .5s;
+}
+.list li:hover img{
+    transform: scale(1.03);
+}
+.list li p{
+    padding-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.pagenu ul{
+    width: 200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.pagenu ul a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.pagenu ul a:hover{
+    color: white;
+}

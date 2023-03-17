@@ -1,0 +1,161 @@
+section{
+    background-image: url(../background/ani_lisbg.png);
+    background-position: center top;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/* wrapper */
+.wrapper{
+    padding-top: 150px;
+    width: 1200px;
+    margin: 0 auto;
+}
+.wrapper h2{
+    font-size: 30px;
+    text-align: center;
+    color: #46714A;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin: 50px 0;
+}
+/* picture */
+.wrapper .pic ul{
+    width: 1000px;
+    height: 300px;
+    display: flex;
+    margin: 0 auto;
+    border:10px solid #649D6A;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.pic ul li{
+    background-size: cover;
+    background-position: center center;
+    transition: .5s;
+}
+.pic .pic1{
+    background-image: url(../picture/anip3.png);
+    flex-grow: 1;
+}
+.pic .pic2{
+    background-image: url(../picture/anip2.png);
+    flex-grow: 1;
+}
+.pic .pic3{
+    background-image: url(../picture/anip1.png);
+    flex-grow: 1;
+}
+.pic .pic1:hover{
+    background-image: url(../picture/anip3.png);
+    flex-grow: 2;
+}
+.pic .pic2:hover{
+    background-image: url(../picture/anip2.png);
+    flex-grow: 2;
+}
+.pic .pic3:hover{
+    background-image: url(../picture/anip1.png);
+    flex-grow: 2;
+}
+/* note */
+.wrapper .note{
+    width: 600px;
+    margin: 0 auto;
+}
+.note ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.note ul li{
+    margin: 20px;
+    position: relative;
+}
+.note li p{
+    background-color: #649D6A;
+    color: white;
+    line-height: 2;
+    padding: 20px 0;
+    width: 150px;
+    text-align: center;
+    letter-spacing: 2px;
+    border-radius: 20px;
+}
+.note li p:nth-child(2){
+    background-color: #ffffff;
+    color: #46714A;
+    line-height: 2;
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    margin: auto;
+    display: none;
+}
+.note li p.canada{
+    line-height: 1.1;
+    height: 32px;
+}
+.note li p:hover ~ p:nth-child(2){
+    display: block;
+}
+/* content */
+.wrapper .content{
+    width: 800px;
+    margin: 50px auto;
+    position: relative;
+}
+.wrapper .content h4{
+    background-color: #649D6A;
+    color: #ffffff;
+    width: 210px;
+    line-height: 2.5;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 2px;
+    position: absolute;
+    left: 0;
+    top: -25px;
+    border-radius: 5px;
+}
+.wrapper .content p{
+    background-color: #ffffff;
+    border:2px solid #649D6A;
+    width: 700px;
+    line-height: 2;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+/* question */
+.wrapper .question{
+    width: 550px;
+    margin: 0 auto;
+}
+.question ul{}
+.question ul li{}
+.question li:nth-child(odd){
+    padding: 15px;
+    background-color: #649D6A;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+.question li:nth-child(even){
+    width: 500px;
+    margin: 0 auto 15px;
+    background-color: #C8E0C5;
+    padding: 15px;
+    border-radius: 0 0 10px 10px;
+}
+.question li img{
+    display: block;
+    width: 13px;
+    height: 13px;
+}
+.question li p{
+    line-height: 1.5;
+}
+
+

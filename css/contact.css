@@ -1,0 +1,68 @@
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+.wrapper .contact{
+    width: 600px;
+    margin: 0 auto;
+}
+.wrapper .contact ul{
+    width: 600px;
+    margin: 50px auto;
+}
+.contact ul li{
+    margin: 20px 0;
+}
+.contact .name{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #46714A;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+    
+.contact .phone{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #46714A;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.contact .email{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #46714A;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.contact .problem{
+    width: 100%;
+    padding: 10px 5px;
+    border: 2px solid #46714A;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.contact .textarea{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #46714A;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.contact .sub{
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    background-color: #46714A;
+    width: auto;
+    margin: 0 auto;
+    display: block;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 17px;
+}
+.contact .sub:hover{
+    background-color: #C8E0C5;
+    color: black;
+}
