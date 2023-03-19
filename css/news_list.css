@@ -40,6 +40,6 @@ footer{
     line-height: 2;
     text-align: center;
     border-radius: 10px;
-    float: right;
+    margin: 20px auto 0;
     font-size: 14px;
 }
