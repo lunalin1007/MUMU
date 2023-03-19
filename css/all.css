@@ -77,7 +77,7 @@ footer{
     background-image: url(../background/footer_bg.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 50vh; 
+    height: 51vh; 
 }
 .footer_content{
     display: flex;
