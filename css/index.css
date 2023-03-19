@@ -3,7 +3,7 @@ header{
     background-image: url(../background/index_header.svg);
     background-size: cover; 
     background-repeat: no-repeat;
-    height: 650px; 
+    height: 110vh;
 }
 /* menu */
 .menu{
