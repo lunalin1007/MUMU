@@ -47,7 +47,7 @@ header{
     background-image: url(../background/indexbg1.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center bottom;
 }
 .topmain .mainbav{
     width: 1000px;
