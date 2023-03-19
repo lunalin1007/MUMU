@@ -77,7 +77,7 @@ footer{
     background-image: url(../background/footer_bg.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 290px; 
+    height: 50vh; 
 }
 .footer_content{
     display: flex;
@@ -85,7 +85,7 @@ footer{
     justify-content: space-between;
     width: 500px;
     margin: 0 auto;
-    padding-top: 180px;
+    padding-top: 15%;
 }
 .footer_content img{
     width: 100px;
