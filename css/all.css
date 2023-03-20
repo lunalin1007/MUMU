@@ -16,11 +16,8 @@ h1{
 h3{
     font-size: 24px;
 }
-h3, p, li{
-    cursor: default;
-    text-align: justify;
-}
-a{
+
+a{  
     text-decoration: none;
 }
 /* top botten */

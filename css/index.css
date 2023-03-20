@@ -76,9 +76,8 @@ header{
 /* section -  news */
 .topmain .news{
     display: flex;
-    width: 900px;
+    width: 850px;
     margin: 70px auto;
-    justify-content: space-around;
 }
 .news li{
     border-radius: 15px;
@@ -88,6 +87,7 @@ header{
     padding: 15px;
     position: relative;
     transition: all .5s;
+    margin: 0 auto;
 }
 .news li:hover{
     transform: translateY(-3%);
@@ -96,15 +96,12 @@ header{
     display: block;
     width: 300px;
     margin: 5px auto 10px;
-    transition: all .5s;
-}
-.news li img:hover{
-    transform: scale(1.03);
 }
 .news li p{
     padding: 10px;
     line-height: 1.6;
     text-align: justify;
+    cursor: default;
 }
 .news_title{
     text-decoration: none;
@@ -117,11 +114,12 @@ header{
 }
 .morebt{
     text-decoration: none;
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
+    float:right ;
     color: black;
     font-size: 14px;
+}
+.morebt i{
+    font-size: 22px;
 }
 .morebt:hover ,.news_title:hover{
     color: #649D6A;
@@ -163,6 +161,7 @@ header{
     position: absolute;
     right: -20px;
     bottom: -20px;
+    cursor: default;
 }
 .ani_pic li .fam{
     padding: 25px 20px;
@@ -193,6 +192,7 @@ header{
 .ser li p{
     text-align: center;
     font-weight: 700;
+    cursor: default;
 }
 .ser .ser_ic1{background-position: 0 0;}
 .ser .ser_ic2{background-position: -130px 0;}

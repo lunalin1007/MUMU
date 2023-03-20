@@ -45,15 +45,17 @@ footer{
     width: 100%;
     display: block;
     padding-bottom: 15px;
-    transition: all .5s;
-}
-.list li:hover img{
-    transform: scale(1.03);
 }
 .list li p{
     padding-bottom: 10px;
     font-size: 14px;
     font-weight: bold;
+}
+.list li p:last-child{
+    float: right;
+}
+.list li p i{
+    font-size: 22px;
 }
 .pagenu ul{
     width: 200px;

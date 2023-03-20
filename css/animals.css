@@ -60,6 +60,12 @@ section{
     clip-path: circle(50%);
     clear: both;
 }
+.list li{
+    transition: all .5s;
+}
+.leaf1:hover, .leaf2:hover, .leaf3:hover, .leaf4:hover, .leaf5:hover{
+    transform: scale(1.1);
+}
 .list a{
     display: block;
     font-size: 20px;
@@ -68,7 +74,7 @@ section{
     text-align: center;
     letter-spacing: 2px;
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 .list .leaf1{
     background-image: url(../background/leaf2.png);
@@ -95,7 +101,7 @@ section{
     bottom: 230px;
 }
 .list .leaf4{
-    background-image: url(../background/leaf1.png);
+    background-image: url(../background/leaf2.png);
     width: 184px;
     height: 79px;
     position: absolute;
@@ -103,7 +109,7 @@ section{
     bottom: -20px;
 }
 .list .leaf5{
-    background-image: url(../background/leaf1.png);
+    background-image: url(../background/leaf2.png);
     width: 184px;
     height: 79px;
     position: absolute;
