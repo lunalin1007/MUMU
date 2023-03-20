@@ -3,6 +3,7 @@ header{
     background-image: url(../background/index_header.svg);
     background-size: cover; 
     background-repeat: no-repeat;
+    background-position: center;
     height: 110vh;
 }
 /* menu */
