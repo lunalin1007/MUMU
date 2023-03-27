@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/all.css">
@@ -15,7 +18,7 @@
 </head>
 <body>
     <header>
-        <nav class="menu">
+        <nav class="menu" id="menu">
             <img src="icon/LOGO2.svg" alt="">
             <ul>
                 <li><a href="news.html">最新消息</a></li>
@@ -25,12 +28,24 @@
                 <li><a href="contact.html">聯絡我們</a></li>
             </ul>
         </nav>
+        <div>
+
+        </div>
+        <img class="owl" src="icon/owl.svg" alt="">
+        <img class="fox_body" src="icon/fox_body.svg" alt="">
+        <img class="fox" src="icon/head.svg" alt="">
+        <div class="scrollbtn">
+            <span class="scroll" id="scroll"><img src="icon/scroll.svg" alt=""></span>
+        </div>
+        <!-- <span class="scroll" id="scroll"><img src="icon/scroll.svg" alt=""></span> -->
         <!-- <div class="mumu">
             <img src="icon/mumu.png" alt="">
         </div> -->
     </header>
     <section>
-        <a class="topbtn" href="index.html"><img src="icon/top.svg" alt=""></a>
+        <div class="topbtn" id="topbtn">
+            <img src="icon/top.svg" alt="">
+        </div>
         <div class="topmain">
              <ul class="mainbav">
                 <li class="bav_btn1"><a href="news.html"></a></li>
@@ -39,23 +54,34 @@
                 <li class="bav_btn4"><a href="tic.html"></a></li>
                 <li class="bav_btn5"><a href="contact.html"></a></li>
             </ul>
-            <h1>最新消息</h1>   
-            <ul class="news">   
-                <li>
-                    <img src="picture/index_pic1.png" alt="">       
-                    <a class="news_title" href="news_list.html">石虎寶寶慶雙滿月 撲抓攀爬精力充沛</a>       
-                    <p>透過林務局野生動物救傷收容體系，與特有生物研究保育中心及屏東科技大學合作進行「石虎保育繁殖計畫」。</p>      
-                    <a class="morebt" href="news_list.html"> More <i class="bi bi-arrow-right-short"></i> </a>   
-                </li>   
-                <li>    
-                    <img src="picture/index_pic2.png" alt="">    
-                    <a class="news_title" href="news_list.html"> 小爪水獺迎來寶寶 媽媽盡責爸爸給力</a>    
-                    <p>睽違了四年，小爪水獺家族再次迎來新生寶寶，水獺媽媽順利生下了四胞胎，爸爸和媽媽每天不停地的照顧打理。</p>      
-                    <a class="morebt" href="news_list.html"> More <i class="bi bi-arrow-right-short"></i></a>
-                </li>
-            </ul>
+            <div class="news_block" id="news">
+                <h1>最新消息</h1>
+                <ul class="news" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">   
+                    <li>
+                        <a href="news_list.html">
+                            <img src="picture/index_pic1.png" alt="">  
+                            <h4>石虎寶寶慶雙滿月 撲抓攀爬精力充沛</h4>     
+                            <p>透過林務局野生動物救傷收容體系，與特有生物研究保育中心及屏東科技大學合作進行「石虎保育繁殖計畫」。</p>      
+                            <span class="morebt">
+                                More <i class="bi bi-arrow-right-short"></i>
+                            </span>
+                        </a>
+                    </li>   
+                    <li>    
+                        <a href="news_list.html">
+                            <img src="picture/index_pic2.png" alt="">   
+                            <h4>小爪水獺迎來寶寶 媽媽盡責爸爸給力</h4> 
+                            <p>睽違了四年，小爪水獺家族再次迎來新生寶寶，水獺媽媽順利生下了四胞胎，爸爸和媽媽每天不停地的照顧打理。</p>      
+                            <span class="morebt">
+                                More <i class="bi bi-arrow-right-short"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+           
         </div>
-        <div class="ani">
+        <div class="ani" data-aos="fade-up" data-aos-duration="1000">
             <h1>木木動物</h1>
             <ul class="ani_pic">
                 <li>
@@ -128,5 +154,18 @@
 
         </div>
     </footer>
+    <script>
+        AOS.init();
+
+        document.getElementById("scroll").addEventListener("click", function() {
+            var target = document.getElementById("news")
+            window.scrollTo({
+                top: target.offsetTop,
+                behavior: "smooth"});
+        });
+
+    </script>
+   
+    <script src="javascript/all.js"></script>
 </body>
 </html>

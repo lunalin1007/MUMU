@@ -9,13 +9,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="css/news.css">
     <link rel="stylesheet" href="css/all.css">
     <title>木木公園 - 最新消息</title>
 </head>
-<body>
+<body id="menu">
     <header class="banner">
-        <nav class="submenu">
+        <nav class="submenu" id="menu">
             <a href="index.html"><img src="icon/LOGO2.svg" alt=""></a>
             <ul>
                 <li><a href="news.html" class="on">最新消息</a></li>
@@ -27,10 +30,12 @@
          </nav>
     </header>
     <section class="subpage">
-        <a class="topbtn" href="news.html"><img src="icon/top.svg" alt=""></a>
+        <div class="topbtn" id="topbtn">
+            <img src="icon/top.svg" alt="">
+        </div>
         <div class="wrapper">
             <h1>最新消息</h1>
-            <ul class="list">
+            <ul class="list" data-aos="fade-down">
                 <li>
                     <a href="news_list.html">
                         <img src="picture/news_pic3.png" alt="">
@@ -105,5 +110,9 @@
             </ul>
         </div>
     </footer>
+    <script>
+         AOS.init();
+    </script>
+    <script src="javascript/all.js"></script>
 </body>
 </html>

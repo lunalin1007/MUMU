@@ -8,11 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <link rel="stylesheet" href="css/map.css">
     <link rel="stylesheet" href="css/all.css">
     <title>木木公園 - 木木地圖</title>
 </head>
-<body>
+<body id="menu">
     <header class="banner">
         <nav class="submenu">
             <a href="index.html"><img src="icon/LOGO2.svg" alt=""></a>
@@ -26,7 +27,9 @@
          </nav>
     </header>
     <section>
-        <a class="topbtn" href="map.html"><img src="icon/top.svg" alt=""></a>
+        <div class="topbtn" id="topbtn">
+            <img src="icon/top.svg" alt="">
+        </div>
         <h1>園區地圖</h1>
         <div class="wrapper">
             <div class="maps">
@@ -35,36 +38,36 @@
             <div class="maps_msg">
                 <ul>
                     <li>
-                        <p>A</p>
-                        <p><span>臺灣動物區</span><br>台灣黑熊、石虎、梅花鹿</p>
+                        <button class="a btn" data-id="myP1">A - 臺灣動物區</button>                     
+                        <p id="myP1">台灣黑熊、石虎、梅花鹿</p>
                     </li>
                     <li>
-                        <p>B</p>
-                        <p><span>兒童動物區</span><br>浣熊、狐獴、羊駝</p>
+                        <button class="b btn" data-id="myP2">B - 兒童動物區</button>                     
+                        <p id="myP2">浣熊、狐獴、羊駝</p>
                     </li>
                     <li>
-                        <p>C</p>
-                        <p><span>熱帶雨林區</span><br>水豚、小爪水獺、花豹</p>
+                        <button class="c btn" data-id="myP3">C - 熱帶雨林區</button>                      
+                        <p id="myP3">水豚、小爪水獺、花豹</p>
                     </li>
                     <li>
-                        <p>D</p>
-                        <p><span>沙漠動物區</span><br>雙峰駱駝、弓角羚羊</p>
+                        <button class="d btn" data-id="myP4">D - 沙漠動物區</button>                        
+                        <p id="myP4">雙峰駱駝、弓角羚羊</p>
+                    </li>   
+                    <li>
+                        <button class="e btn" data-id="myP5">E - 澳洲動物區</button>                         
+                        <p id="myP5">無尾熊、大灰袋鼠、食火雞</p>
                     </li>
                     <li>
-                        <p>E</p>
-                        <p><span>澳洲動物區</span><br>無尾熊、大灰袋鼠、食火雞</p>
+                        <button class="f btn" data-id="myP6">F - 非洲動物區</button>                        
+                        <p id="myP6">白犀牛、長頸鹿、班哥羚</p>
                     </li>
                     <li>
-                        <p>F</p>
-                        <p><span>非洲動物區</span><br>白犀牛、長頸鹿、班哥羚</p>
+                        <button class="g btn" data-id="myP7">G - 溫帶動物區</button>                       
+                        <p id="myP7">美洲山獅、小熊貓、灰狼</p>
                     </li>
                     <li>
-                        <p>G</p>
-                        <p><span>溫帶動物區</span><br>美洲山獅、小熊貓、灰狼</p>
-                    </li>
-                    <li>
-                        <p>H</p>
-                        <p><span>鳥園</span><br>黑面琵鷺、丹頂鶴、鵜鶘</p>
+                        <button class="h btn" data-id="myP8">H - 鳥園</button>                       
+                        <p id="myP8">黑面琵鷺、丹頂鶴、鵜鶘</p>
                     </li>
                 </ul>
             </div>
@@ -86,5 +89,22 @@
             </ul>
         </div>
     </footer>
+    <script>
+        var button = document.querySelectorAll("button");
+        for (let i = 0; i < button.length; i++) {
+            button[i].addEventListener("mousedown", function(e){
+                e.preventDefault();
+                let id = this.getAttribute("data-id");
+                let p = document.getElementById(id);
+                if (p.classList.contains("show")) {
+                p.classList.remove("show");
+                }else{
+                    p.classList.add("show");
+                }      
+            });
+        }
+        
+    </script>
+    <script src="./javascript/all.js"></script>
 </body>
 </html>

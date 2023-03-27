@@ -8,11 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="css/ani_inner.css">
     <link rel="stylesheet" href="css/all.css">
     <title>木木公園 - 北美浣熊</title>
 </head>
-<body>
+<body id="menu">
     <header class="banner">
         <nav class="submenu">
             <a href="index.html"><img src="icon/LOGO2.svg" alt=""></a>
@@ -26,8 +30,11 @@
          </nav>
     </header>
     <section>
-        <a class="topbtn" href="ani_inner.html"><img src="icon/top.svg" alt=""></a>
+        <div class="topbtn" id="topbtn">
+            <img src="icon/top.svg" alt="">
+        </div>
         <div class="wrapper">
+
             <div class="pic">
                 <ul>
                     <li class="pic1"></li>
@@ -67,33 +74,31 @@
             </div>
             <div class="question">
                 <ul>
-                    <li>
-                        <p>Q：為什麼北美浣熊的眼睛周圍是黑色的？</p>
-                        <img src="icon/+.png" alt="">
+                    <li class="answer-toggle">
+                        <p class="question-text">Q：為什麼北美浣熊的眼睛周圍是黑色的？</p>
+                        <span class="btn"></span>
                     </li>
-                    <li>
+                    <li class="answer-text">
                         <p>A：減少反射，幫助提升夜晚視力。</p>
                     </li>
-                    <li>
-                        <p>Q：為什麼北美浣熊吃東西之前要洗東西？</p>
-                        <img src="icon/+.png" alt="">
+                    <li class="answer-toggle">
+                        <p class="question-text">Q：為什麼北美浣熊吃東西之前要洗東西？</p>
+                        <span class="btn"></span>
                     </li>
-                    <li>
+                    <li class="answer-text">
                         <p>A：浣熊前爪上的觸覺神經纖維被水潤濕後靈敏度會大輻增加，為了能更好地分辨食物，浣熊在吃食物之前，會把到手的食物特意放到水中感覺一下，順便把泥土去除、清洗乾淨再吃。</p>
                     </li>
-                    <li>
-                        <p>Q：北美浣熊平常都吃什麼？</p>
-                        <img src="icon/+.png" alt="">
+                    <li class="answer-toggle">
+                        <p class="question-text">Q：北美浣熊平常都吃什麼？</p>
+                        <span class="btn"></span>
                     </li>
-                    <li>
+                    <li class="answer-text">
                         <p>A：北美浣熊是雜食性動物，新竹動物園的北美浣熊平常都吃香蕉、木瓜、煮過的地瓜、芒果、蔬菜的葉子。</p>
                     </li>
 
                 </ul>
             </div>
         </div>
-        
-        
     </section>
     <footer>
         <div class="footer_content">
@@ -111,5 +116,42 @@
             </ul>
         </div>
     </footer>
+    <script src="./javascript/all.js"></script>
+    <script>
+       // 將所有的 answer-toggle 元素加上 click 事件
+        const answer_toggle = document.querySelectorAll('.answer-toggle');
+        answer_toggle.forEach(function(answer_toggle){
+            answer_toggle.addEventListener('click', function(){
+                // 取得問題區塊和答案區塊
+                const question_text = answer_toggle.querySelector('.question-text');
+                const answer_text = answer_toggle.nextElementSibling;
+                const btn = answer_toggle.querySelector(".btn");
+
+                // 切換 -on class
+                answer_toggle.classList.toggle('-on');
+                answer_text.classList.toggle('-on');
+
+                // 如果 -on class 被加上，就讓答案區塊的高度為自動，否則移除 max-height 屬性
+                if (answer_toggle.classList.contains('-on')){
+                    answer_text.style.maxHeight = answer_text.scrollHeight + 'px';
+                    btn.classList.add("rotate");
+                }else{
+                    answer_text.style.maxHeight = null;
+                    btn.classList.remove("rotate");
+                };
+            });
+        });
+        // 當瀏覽器視窗大小改變時，重設答案區塊的高度
+        window.addEventListener('resize', function(){
+            answer_toggle.forEach(function(answer_toggle){
+                if (answer_toggle.classList.contains('-on')){
+                const answer_text = answer_toggle.nextElementSibling;
+                answer_text.style.maxHeight = answer_text.scrollHeight + 'px';
+                };
+            });
+        });
+
+      
+    </script>
 </body>
 </html>

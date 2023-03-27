@@ -8,11 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <link rel="stylesheet" href="css/animals.css">
     <link rel="stylesheet" href="css/all.css">
     <title>木木公園 - 木木動物</title>
 </head>
-<body>
+<body id="menu">
     <header class="banner">
         <nav class="submenu">
             <a href="index.html"><img src="icon/LOGO2.svg" alt=""></a>
@@ -26,7 +27,9 @@
          </nav>
     </header>
     <section>
-        <a class="topbtn" href="animals.html"><img src="icon/top.svg" alt=""></a>
+        <div class="topbtn" id="topbtn">
+            <img src="icon/top.svg" alt="">
+        </div>
         <div class="title">
             <h1>木木動物</h1>
             <img src="icon/ani.png" alt="">
@@ -91,6 +94,9 @@
                 <li class="soc_btn3"><a href="#" target="_blank"></a></li>
             </ul>
         </div>
+        <script src="./javascript/all.js">
+
+        </script>
     </footer>
 </body>
 </html>

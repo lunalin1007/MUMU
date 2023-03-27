@@ -1,53 +1,114 @@
 
 section{
     padding-top: 130px;
-    background-image: url(../background/mapsbg.png);
-    background-position: center bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 .wrapper{
-    width: 1200px;
+    width: 100%;
     display: flex;
     margin: 50px auto;
     justify-content: center;
+}
+.wrapper .maps{
+    width: 36%;
 }
 .wrapper .maps img{
     display: block;
     width: 450px;
 }
-.wrapper .maps_msg ul{
-    width: 620px;
-    margin-left: 20px;
+.wrapper .maps_msg{
     display: flex;
-    flex-wrap: wrap;
+    width: 33%;
 }
-.wrapper ul li{
+.wrapper .maps_msg ul{
+    width: 100%;
+    margin-left: 5px;
+}
+.maps_msg ul li{
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
-}
-.wrapper li p{
+    height: 60px;
     font-weight: 700;
-    font-size: 16px;
-    border-radius: 20px;
-    line-height: 2;
-    margin-right: 10px;
-}
-.wrapper li p:first-child{
-    width: 30px;
-    background-color: #649D6A;
-    color: white;
-    text-align: center;
-}
-.wrapper .maps_msg span{
-    color: white;
-}
-.wrapper li p:nth-child(2){
-    width: 220px;
-    line-height: 3;
-    color: black;
-    background-image: linear-gradient(180deg, #649D6A 40%, #C8E0C5 40% , #C8E0C5 100%);
-    padding: 3px 20px 10px;
+    cursor: default;
     letter-spacing: 2px;
 }
+.maps_msg .a{
+    background-color: #F5AF7C;
+}
+#myP1{
+    background-color: #FCDAC8;
+    border: 2px solid #F5AF7C;
+}
+.maps_msg .b{
+    background-color: #83CCD3;
+}
+#myP2{
+    background-color: #D3EDEA;
+    border: 2px solid #83CCD3;
+}
+.maps_msg .c{
+    background-color: #A3BF96;
+}
+#myP3{
+    background-color: #EBF4D9;
+    border: 2px solid #A3BF96;
+}
+.maps_msg .d{
+    background-color: #6B9683;
+}
+#myP4{
+    background-color: #CEE3D2;
+    border: 2px solid #6B9683;
+}
+.maps_msg .e{
+    background-color: #A2B1BE;
+}
+#myP5{
+    background-color: #DBDDD8;
+    border: 2px solid #A2B1BE;
+}
+.maps_msg .f{
+    background-color: #F9BD46;
+}
+#myP6{
+    background-color: #FEF2C8;
+    border: 2px solid #F9BD46;
+}
+.maps_msg .g{
+    background-color: #F28E83;
+}
+#myP7{
+    background-color: #FDEDED;
+    border: 2px solid #F28E83;
+}
+.maps_msg .h{
+    background-color: #F3AAC8;
+}
+#myP8{
+    background-color: #F9E1EE;
+    border: 2px solid #F3AAC8;
+}
+.maps_msg li button{
+    font-weight: 700;
+    border: 0;
+    font-size: 16px;
+    border-radius: 10px;
+    width: 160px;
+    padding: 10px;
+    color:white;
+    z-index: 1;
+}
+.wrapper p{
+    font-size: 14px;
+    border-radius: 10px;
+    width: 220px;
+    color: black;
+    padding: 12px;
+    margin-left: 5px;
+    transition: opacity 0.5s, transform 1s;
+    opacity: 0; 
+    transform: translateX(-70%);
+}
+p.show {
+    opacity: 1;  
+    transform: translateX(0); 
+  }

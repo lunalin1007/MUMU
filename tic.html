@@ -8,13 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <link rel="stylesheet" href="css/tic.css">
     <link rel="stylesheet" href="css/all.css">
     <title>木木公園 - 票價資訊</title>
 </head>
-<body>
-    <header class="banner">
-        <nav class="submenu">
+<body id="menu">
+    <header class="banner" >
+        <nav class="submenu" >
             <a href="index.html"><img src="icon/LOGO2.svg" alt=""></a>
             <ul>
                 <li><a href="news.html">最新消息</a></li>
@@ -26,8 +27,10 @@
          </nav>
     </header>
     <section class="subpage">
-        <div class="wrapper">
-            <a class="topbtn" href="index.html"><img src="icon/top.svg" alt=""></a>
+        <div class="wrapper" >
+            <div class="topbtn" id="topbtn">
+                <img src="icon/top.svg" alt="">
+            </div>
             <h1>票價資訊</h1>
             <div>
                 <table class="tickets">
@@ -87,5 +90,8 @@
             </ul>
         </div>
     </footer>
+    <script src="./javascript/all.js">
+
+    </script>
 </body>
 </html>

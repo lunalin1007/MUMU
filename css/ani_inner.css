@@ -147,20 +147,33 @@ section{
     align-items: center;
     border-radius: 5px;
 }
-.question li:nth-child(even){
+.question .answer-text{
     width: 500px;
     margin: 0 auto 15px;
     background-color: #C8E0C5;
-    padding: 15px;
+    padding: 0 5px;
     border-radius: 0 0 10px 10px;
-}
-.question li img{
-    display: block;
-    width: 13px;
-    height: 13px;
+
+    max-height: 0;
+    overflow: hidden;
+    box-sizing: content-box;
+    transition: all .5s;
+    border: 10px solid #C8E0C5;
 }
 .question li p{
     line-height: 1.5;
+    text-align: justify;
+}
+.question .btn{
+    background-image:url(../icon/+.png);
+    width: 15px;
+    height: 15px;
+    transition: all .5s;
+}
+span.rotate{
+    transform: rotate(180deg);
 }
 
+
+   
 
