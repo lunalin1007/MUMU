@@ -63,12 +63,24 @@ footer{
     display: flex;
     justify-content: space-around;
 }
-.pagenu ul a{
+.pagenu ul li{
     text-decoration: none;
-    color: black;
     font-weight: 700;
-    letter-spacing: 2px;
+    padding: 5px 8px;
+}
+.pagenu a{
+    display: block;
+    color: black;
+}
+.pagenu .on a{
+    color: white;
 }
 .pagenu ul a:hover{
     color: white;
+}
+.pagenu .on{
+    background-color: #C8E0C5;
+    border-radius: 50%;
+    padding: 5px 8px;
+    box-sizing: border-box;
 }
