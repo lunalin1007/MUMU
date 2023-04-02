@@ -7,6 +7,7 @@ header{
     height: 110vh;
     position: relative;
 }
+/* 小動畫 */
 .owl{
     width: 180px;
     position: absolute;
@@ -90,9 +91,7 @@ header{
 .menu li a:hover{
     color: white;
 }
-/* .scrollbtn{
-    
-} */
+
 .scroll{
     position: absolute;
     left: calc(50% - 20px);
@@ -120,16 +119,7 @@ header{
         opacity: 0;
     }
 }
-/* .mumu{
-    display: block;
-    text-align: right;
-    padding-right: 100px;
-}
-.mumu img{
-    width: 500px;
-} */
 
-/* section - bav ntn */
 .topmain{
     background-image: url(../background/indexbg1.png);
     background-size: cover;

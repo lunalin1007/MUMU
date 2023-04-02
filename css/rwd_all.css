@@ -1,0 +1,198 @@
+@media screen and (max-width: 414px){
+
+    /* words size */
+    h1{
+        line-height: 1.6;
+        font-size: 30px;
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 3px;
+        color: #46714A;
+        cursor: default;
+    }
+    h3{
+        font-size: 20px;
+    }
+
+    /* 漢堡選單 */
+    .banner{
+        height: 0;
+    }
+    .banner .submenu{
+        position: fixed;
+        position: relative;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        background-color: #89C681;
+    }
+    .submenu a img{
+        width: 30%;
+        display: block;
+        margin: 5px auto;
+    }
+    .submenu .bar{
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        right: 0;
+        overflow: hidden;
+        pointer-events: none;
+    }
+    .submenu .bar ul{
+        background-color: #C8E0C5;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        height: calc(70vh - 40px);
+        width: 51%;
+        position: absolute;
+        top: 64px;
+        right: -51%;
+        pointer-events: fill;
+    }
+    .submenu .bar ul li{
+        overflow: hidden;
+        margin: 10px 0;
+        border-bottom: 1px solid #649D6A;
+    }
+    .submenu .bar li a{
+        display: block;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 400;
+        color: black;
+        padding: 13px;
+        margin-left: 10px;
+        letter-spacing: 2px;
+    }
+    #ham {
+        position: relative;
+        display: block;
+        height: 40px;
+        width: 40px;
+        transition: 0.3s;
+
+        position: absolute;
+        top: 10px;
+        right: 5px;
+        pointer-events: fill;
+    }
+    #ham span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 0;
+        width: 24px;
+        border: 2px solid white;
+        border-radius: 24px;
+        margin: -2px 0 0 -14px;
+    }
+    #ham.open span {
+        height: 24px;
+        margin: -15px 0 0 -15px;
+        border-width: 3px;
+    }
+    #ham span:before,
+    #ham span:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        width: 28px;
+        height: 4px;
+        background: white;
+        border-radius: 24px;
+        margin: 0 0 0 -14px;
+        transition: 0.3s;
+    }
+    #ham.open span:before,
+    #ham.open span:after {
+        top: 9.5px;
+        width: 16px;
+        margin: 0 0 0 -8px;
+    }
+    #ham span:before {
+    top: -9px;
+    } 
+    #ham.open span:before {
+    transform: rotate(-135deg);
+    }
+    #ham span:after {
+    top: 5px;
+    }
+    #ham.open span:after {
+    transform: rotate(135deg);
+    }
+
+    /* top botten */
+    .topbtn{
+        display: block;
+        position: absolute;
+        right: 10px;
+        bottom: 30px;
+        position: fixed;
+        z-index: 99;
+    }
+    .topbtn img{
+        width: 70%;
+    }
+
+
+
+
+
+
+    /* footer */
+    footer{
+        background-image: url(../background/rwd_footer_bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        height: 280px;
+        position: relative;
+    }
+    .footer_content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 65%;
+        margin: 0 auto;
+        position: absolute;
+        left: calc(50% - 124px);
+        bottom: 10px;
+    }
+    .footer_content img{
+        width: 45px;
+    }
+    .footer_content .msg{
+        font-size: 12px;
+        line-height: 1.5;
+        color: white;
+        letter-spacing: 1px;
+        font-weight: 400;
+        margin: 5px;
+    }
+    .footer_content .soc{
+        display: flex;
+        
+    }
+    .soc a{
+        background-image: url(../icon/40_10.png);
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+    .soc .soc_btn1 a{background-position: 0 0;}
+    .soc .soc_btn2 a{background-position: -30px 0;}
+    .soc .soc_btn3 a{background-position: -60px 0;}
+    .soc .soc_btn1 a:hover{background-position: 0 -30px;}
+    .soc .soc_btn2 a:hover{background-position: -30px -30px;}
+    .soc .soc_btn3 a:hover{background-position: -60px -30px;}
+
+}

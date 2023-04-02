@@ -9,38 +9,50 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/rwd_index.css">
+    <link rel="stylesheet" href="css/rwd_all.css">
     <title>木木公園</title>
 </head>
 <body>
     <header>
         <nav class="menu" id="menu">
-            <img src="icon/LOGO2.svg" alt="">
-            <ul>
-                <li><a href="news.html">最新消息</a></li>
-                <li><a href="map.html">木木地圖</a></li>
-                <li><a href="animals.html">木木動物</a></li>
-                <li><a href="tic.html">票價資訊</a></li>
-                <li><a href="contact.html">聯絡我們</a></li>
-            </ul>
+            <picture>
+                <source srcset="icon/LOGO1.png" media="(max-width: 414px)">
+                <img src="icon/LOGO2.svg" alt="">
+            </picture>
+            <nav class="bar">
+                <ul class="menu_bar">
+                    <li><a href="news.html">最新消息</a></li>
+                    <li><a href="map.html">木木地圖</a></li>
+                    <li><a href="animals.html">木木動物</a></li>
+                    <li><a href="tic.html">票價資訊</a></li>
+                    <li><a href="contact.html">聯絡我們</a></li>
+                </ul>
+                <a href="#" id="ham">
+                    <span></span>
+                </a>
+            </nav>
+            
         </nav>
         <div>
 
         </div>
-        <img class="owl" src="icon/owl.svg" alt="">
-        <img class="fox_body" src="icon/fox_body.svg" alt="">
-        <img class="fox" src="icon/head.svg" alt="">
+        <img class="owl anim" src="icon/owl.svg" alt="">
+        <img class="fox_body anim" src="icon/fox_body.svg" alt="">
+        <img class="fox anim" src="icon/head.svg" alt="">
         <div class="scrollbtn">
             <span class="scroll" id="scroll"><img src="icon/scroll.svg" alt=""></span>
         </div>
-        <!-- <span class="scroll" id="scroll"><img src="icon/scroll.svg" alt=""></span> -->
-        <!-- <div class="mumu">
-            <img src="icon/mumu.png" alt="">
-        </div> -->
+       
+        
     </header>
     <section>
         <div class="topbtn" id="topbtn">
@@ -78,6 +90,7 @@
                         </a>
                     </li>
                 </ul>
+
             </div>
            
         </div>
@@ -106,7 +119,39 @@
                 </li>
             </ul>
         </div>
-                
+        
+        <div class="rwd_ani_swiper" data-aos="fade-up" data-aos-duration="1000">
+            <h1>木木動物</h1>
+            <div class="swiper-container mySwiper" scrollbar="true" scrollbar-hide="true">
+    
+                <div class="swiper-wrapper">
+    
+                    <div class="swiper-slide">
+                        <img src="picture/index_pic3.png" alt="">
+                        <h3>北美浣熊<br>樂樂</h3>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="picture/index_pic4.png" alt="">
+                        <h3 class="fam">狐獴家族</h3>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="picture/index_pic5.png" alt="">
+                        <h3>水豚君<br>橘子</h3>
+                    </div>
+              
+                </div>
+                <!-- 加入進度條 -->
+                <div class="swiper-scrollbar" ></div>
+                <!-- 加入左右按鈕 -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div> 
+            <div class="readmore">
+                <a href="animals.html">看更多</a>
+            </div>
+            
+        </div>
+           
         <div class="service">
             <h1>園區服務</h1>
             <ul class="ser">
@@ -157,15 +202,9 @@
     <script>
         AOS.init();
 
-        document.getElementById("scroll").addEventListener("click", function() {
-            var target = document.getElementById("news")
-            window.scrollTo({
-                top: target.offsetTop,
-                behavior: "smooth"});
-        });
-
     </script>
    
     <script src="javascript/all.js"></script>
+    <script src="javascript/index.js"></script>
 </body>
 </html>

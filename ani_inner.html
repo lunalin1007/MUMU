@@ -13,19 +13,30 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="css/ani_inner.css">
     <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/rwd_ani_inner.css">
+    <link rel="stylesheet" href="css/rwd_all.css">
     <title>木木公園 - 北美浣熊</title>
 </head>
 <body id="menu">
     <header class="banner">
         <nav class="submenu">
-            <a href="index.html"><img src="icon/LOGO2.svg" alt=""></a>
-            <ul>
-                <li><a href="news.html">最新消息</a></li>
-                <li><a href="map.html">木木地圖</a></li>
-                <li><a href="animals.html">木木動物</a></li>
-                <li><a href="tic.html">票價資訊</a></li>
-                <li><a href="contact.html">聯絡我們</a></li>
-            </ul>
+            <a href="index.html">
+                <picture>
+                    <source srcset="icon/LOGO1.png" media="(max-width: 414px)">
+                    <img src="icon/LOGO2.svg" alt="">
+                </picture>
+            </a>
+            <nav class="bar">
+                <ul class="menu_bar">
+                    <li><a href="news.html">最新消息</a></li>
+                    <li><a href="map.html">木木地圖</a></li>
+                    <li><a href="animals.html">木木動物</a></li>
+                    <li><a href="tic.html">票價資訊</a></li>
+                    <li><a href="contact.html">聯絡我們</a></li>
+                </ul>
+                <a href="#" id="ham">
+                    <span></span>
+                </a>
          </nav>
     </header>
     <section>

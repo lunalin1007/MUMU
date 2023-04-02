@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        div{
+            position: relative;
+        }
+        nav{
+            height: 100vh;
+            width: 100vw;
+            background-color: #e2bfcb;
+            position: absolute;
+            top: 0;
+            right: 0;
+            overflow: hidden;
+        }
+        nav ul{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            height: calc(80vh - 40px);
+            width: 50%;
+            background-color: aquamarine;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            transition: .5s;
+            overflow: hidden;
+            position: absolute;
+            top: 40px;
+            right: -51%;
+        }
+        nav ul li{
+            overflow: hidden;
+            margin: 15px 0;
+            border-bottom: 1px solid red;
+            flex-wrap: nowrap;
+        }
+        nav ul li a{
+            /* width: 0; */
+            text-decoration: none;
+            display: block;
+            padding: 13px;
+            margin-left: 10px;
+        }
+        #ham {
+            position: fixed;
+            position: relative;
+            display: block;
+            height: 40px;
+            width: 40px;
+            background: #ed145b;
+            transition: 0.3s;
+
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        #ham span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 0;
+            width: 24px;
+            border: 2px solid white;
+            border-radius: 24px;
+            margin: -2px 0 0 -14px;
+        }
+
+        #ham.open span {
+            height: 24px;
+            margin: -15px 0 0 -15px;
+            border-width: 3px;
+        }
+
+        #ham span:before,
+        #ham span:after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            width: 28px;
+            height: 4px;
+            background: white;
+            border-radius: 24px;
+            margin: 0 0 0 -14px;
+            transition: 0.3s;
+        }
+
+        #ham.open span:before,
+        #ham.open span:after {
+            top: 9.5px;
+            width: 16px;
+            margin: 0 0 0 -8px;
+        }
+
+        #ham span:before {
+        top: -9px;
+        } 
+
+        #ham.open span:before {
+        transform: rotate(-135deg);
+        }
+
+        #ham span:after {
+        top: 5px;
+        }
+
+        #ham.open span:after {
+        transform: rotate(135deg);
+        }
+
+            
+        
+        
+
+    </style>
+</head>
+<body>
+
+    <div>
+        <nav>
+            <ul>
+                <li><a href="news.html">最新消息</a></li>
+                <li><a href="map.html">木木地圖</a></li>
+                <li><a href="animals.html">木木動物</a></li>
+                <li><a href="tic.html">票價資訊</a></li>
+                <li><a href="contact.html">聯絡我們</a></li>
+            </ul>
+            <a href="#" id="ham">
+                <span></span>
+            </a>
+        </nav>
+       
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        jQuery(document).ready(function(){
+            let ul_open = 0;
+            $('#ham').click(function(){
+                $(this).toggleClass('open');
+                if(ul_open == 0){
+                    $('ul').animate({ "right": "0" }, 100);
+                    ul_open = 1;
+                }else{
+                    $('ul').animate({ "right": "-51%" }, 100);
+                    ul_open = 0;
+                }
+                
+                
+            });
+        });
+    </script>
+</body>
+</html>
