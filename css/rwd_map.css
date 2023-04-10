@@ -1,0 +1,30 @@
+@media screen and (max-width: 414px){
+    section{
+        padding-top: 100px;
+    }
+    .wrapper{
+        flex-direction: column;
+        margin: 20px auto;
+    }
+    .wrapper .maps{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .wrapper .maps img{
+        width: 100%;
+    }
+    .wrapper .maps_msg{
+        width: 90%;
+        margin: 20px auto;
+    }
+    .maps_msg ul li{
+        height: 50px;
+    }
+    .maps_msg li button{
+        width: 150px;
+        padding: 10px;
+    }
+    .wrapper p{
+        width: 200px;
+    }
+}

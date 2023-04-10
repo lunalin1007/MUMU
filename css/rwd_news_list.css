@@ -1,0 +1,36 @@
+@media screen and (max-width: 414px){
+    footer{
+        background-color: unset;
+    }
+    .wrapper{
+        background-image: none;
+    }
+    .wrapper .border{
+        width: 90%;
+    }
+    .wrapper .border ul{
+        margin-left: 10%;
+        flex-wrap: wrap;
+    }
+    .wrapper .border li{
+        font-size: 12px;
+    }
+    .wrapper .border li a{
+        font-size: 12px;
+    }
+    .wrapper .border h3{
+        width: 85%;
+        margin-left: 10%;
+        font-weight: 700;
+        margin-bottom: 20px;
+        line-height: 1.6;
+    }
+    .wrapper .border p{
+        width: 80%;
+        padding-bottom: 20px;
+        line-height: 1.6;
+    }
+    .wrapper .border p:nth-child(2){
+        width: 80%;
+    }
+}

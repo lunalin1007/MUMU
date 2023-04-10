@@ -1,0 +1,42 @@
+@media screen and (max-width: 414px){
+    .wrapper{
+        padding-top: 100px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .wrapper h2{
+        margin: 15px 0;
+        letter-spacing: 1px;
+        font-size: 24px
+    }
+    .wrapper .pic{
+        display: none;
+    }
+    .swiper-container{
+        display: block;
+    }
+    .wrapper .note{
+        width: 100%;
+    }
+    .note ul li{
+        margin: 5px;
+    }
+    .note li p{
+        width: 120px;
+        letter-spacing: 1px;
+        border-radius: 15px;
+    }
+    .wrapper .content{
+        width: 95%;
+        margin: 50px auto 30px;
+    }
+    .wrapper .content p{
+        width: 85%;
+    }
+    .wrapper .question{
+        width: 90%;
+    }
+    .question .answer-text{
+        width: 88%;
+    }
+}

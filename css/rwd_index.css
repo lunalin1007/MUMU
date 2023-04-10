@@ -166,12 +166,14 @@
     }
     /* animals */
     .rwd_ani_swiper{
-        padding-top: 40px;
+        display: block;
+        padding: 40px 0;
         background-size: 110%;
+        /* background-color: white; */
     }
     /* 設定 Swiper 外層容器的高度 */
     .swiper-container {
-        width: 70%;
+        width: 85%;
         overflow: hidden;
         /* height: 300px; */
         /* border: 1px solid red; */
@@ -259,8 +261,15 @@
     }  
     .service{
         padding-top: 50px;
-        width: 80%;
+        width: 85%;
         margin: 0 auto;
+    }
+    .service::after{
+        background-size: 60%;
+        background-position: top right;
+        position: absolute;
+        right: -4%;
+        top: 3%;
     }
     .service .ser{
         border: 5px solid #649D6A;

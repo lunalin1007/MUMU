@@ -204,6 +204,9 @@ header{
     color: #649D6A;
 }
 /* animals */
+.rwd_ani_swiper{
+    display: none;
+}
 .ani{
     padding-top: 100px;
     background-image: url(../background/indexbg2.svg);
@@ -250,6 +253,37 @@ header{
     padding-top: 100px;
     width: 50%;
     margin: 0 auto;
+    position: relative;
+}
+.service::after{
+    content: '';
+    background-image: url(../icon/Capybara.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    width: 208px;
+    height: 192px;
+    position: absolute;
+    right: 0;
+    top: 10%;
+    z-index: -1;
+    animation: capybara 3s infinite ease-in-out;
+}
+@keyframes capybara{
+    0%{
+        transform: translateX(0px);
+    }
+    25%{
+        transform: translateX(4.5px);
+    }
+    50%{
+        transform: translateX(-4.5px);
+    }
+    75%{
+        transform: translateX(4.5px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
 }
 .service .ser{
     border: 10px solid #649D6A;

@@ -1,0 +1,58 @@
+@media screen and (max-width: 414px){
+
+    section{
+        height: 100%
+    }
+    .title{
+        width: 100%;
+        padding-top: 100px;
+        padding-bottom: 30px;
+        position: relative;
+    }
+    .title h1{
+        width: 250px;
+    }
+    .title img{
+        width: 120px;
+        position: absolute;
+        left: 3.5%;
+        bottom: -15%;
+    }
+    .wrapper::after{
+        content: none;
+        background-image: none;
+    }
+    .wrapper{
+        width: 90%;
+    }
+    .list{
+        width: 100%;
+        padding-top: 40px;
+    }
+    .list .right{
+        float: none;
+    }
+    .list li{
+        margin: 50px auto 0;
+    }
+    .list .leaf1{
+        right: calc(50% - 92px);
+        top: 15%;
+    }
+    .list .leaf2{
+        left: calc(50% - 92px);
+        top: 34.5%;
+    }
+    .list .leaf3{
+        right: calc(50% - 92px);
+        bottom: 37.5%;
+    }
+    .list .leaf4{
+        left: calc(50% - 92px);
+        bottom: 18%;
+    }
+    .list .leaf5{
+        right: calc(50% - 92px);
+        bottom: -1.5%;
+    }
+}

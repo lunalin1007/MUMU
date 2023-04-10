@@ -8,8 +8,9 @@ document.getElementById("scroll").addEventListener("click", function() {
 
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1, // 每次顯示幾張 slide
-    spaceBetween: 30, // 每張 slide 之間的距離
+    spaceBetween: 20, // 每張 slide 之間的距離
     centeredSlides: true, // 中央對齊
+    loop: true, //循環
     scrollbar: {
       el: ".swiper-scrollbar", // 指定要使用的滾動條
       draggable: true, // 滾動條是否可拖曳

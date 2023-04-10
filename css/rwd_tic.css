@@ -1,0 +1,39 @@
+@media screen and (max-width: 414px){
+    .wrapper{
+        width: 100%;
+    }
+    .wrapper .tickets{
+        display: none;
+    }
+    .tickets::after{
+        content: none;
+    }
+    .tickets::before{
+        content: none;
+    }
+    .wrapper .tic_rwd{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .wrapper .tic_rwd ul{
+        width: 85%;
+        margin: 15px auto;
+        border-radius: 15px;
+        background-color:#C8E0C5;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.534);
+    }
+    .tic_rwd .title{
+        background-color: #649D6A;
+        border-radius: 15px 15px 0 0;
+        line-height: 2;
+        color: white;
+    }
+    .tic_rwd li{
+        line-height: 1.6;
+        font-size: 20px;
+        font-weight: 500;
+        padding: 5px 15px;
+        letter-spacing: 1px;
+    }
+}

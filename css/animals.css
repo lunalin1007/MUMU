@@ -59,6 +59,7 @@ section{
     height: 250px;
     clip-path: circle(50%);
     clear: both;
+    overflow: hidden;
 }
 .list li{
     transition: all .5s;
@@ -83,6 +84,7 @@ section{
     position: absolute;
     right: 30px;
     top: 265px;
+    z-index: 1;
 }
 .list .leaf2{
     background-image: url(../background/leaf2.png);
@@ -91,6 +93,7 @@ section{
     position: absolute;
     left: 40px;
     top: 515px;
+    z-index: 1;
 }
 .list .leaf3{
     background-image: url(../background/leaf2.png);
@@ -99,6 +102,7 @@ section{
     position: absolute;
     right: 30px;
     bottom: 230px;
+    z-index: 1;
 }
 .list .leaf4{
     background-image: url(../background/leaf2.png);
@@ -107,6 +111,7 @@ section{
     position: absolute;
     left: 40px;
     bottom: -20px;
+    z-index: 1;
 }
 .list .leaf5{
     background-image: url(../background/leaf2.png);
@@ -115,6 +120,7 @@ section{
     position: absolute;
     right: 30px;
     bottom: -270px;
+    z-index: 1;
 }
 .list .lis1 img{
     width: 400px;

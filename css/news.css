@@ -37,6 +37,7 @@ footer{
     font-size: 18px;
     letter-spacing: 2px;
     font-weight: 700;
+    text-align: justify;
 } 
 .list li:hover a{
     color:#649D6A;

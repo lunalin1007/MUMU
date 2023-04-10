@@ -1,0 +1,35 @@
+@media screen and (max-width: 414px){
+    footer{
+        background-color: unset;
+    }
+    .wrapper{
+        background-image: none;
+    }
+    .wrapper .list{
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px 0; 
+    }
+    .wrapper .list li{
+        width: 66%;
+        height: 100%;
+        margin: 10px auto;
+        padding-top: 10px;
+        border: 8px solid #649D6A; 
+    }
+    .list li a{
+        width: 90%;
+        font-size: 14px;
+        letter-spacing: 1px;
+        font-weight: 500;
+    }
+    .list li img{
+        width: 100%;
+        padding-bottom: 5px;
+        margin: 0 auto;
+    }
+    .list li p{
+        padding-bottom: 5px;
+        font-size: 12px;
+    }
+}
