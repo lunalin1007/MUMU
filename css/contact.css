@@ -3,32 +3,6 @@
     margin: 0 auto;
     position: relative;
 }
-.contact::after{
-    content: '';
-    background-image: url(../icon/otter.svg);
-    width: 151px;
-    height: 163px;
-    background-repeat: no-repeat;
-    position: absolute;
-    right: 10%;
-    top: 5%;
-    animation: otter 4.5s infinite linear;
-    z-index: -1;
-}
-@keyframes otter{
-    0%{
-        transform: rotate(0deg);
-        transform-origin: center;
-    }
-    50%{
-        transform: rotate(360deg);
-        transform-origin: center;
-    }
-    100%{
-        transform: rotate(0deg);
-        transform-origin: center;
-    }
-}
 .wrapper .contact{
     width: 600px;
     margin: 0 auto;
