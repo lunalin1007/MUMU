@@ -100,6 +100,7 @@ header{
     animation-duration: 1s;
     animation-iteration-count: infinite; */
     animation: scroll 1s infinite ease-in-out;
+    cursor: pointer;
 }
 @keyframes scroll{
     0%{

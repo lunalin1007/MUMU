@@ -96,6 +96,7 @@ section{
     padding: 10px;
     color:white;
     z-index: 1;
+    cursor: pointer;
 }
 .wrapper p{
     font-size: 14px;

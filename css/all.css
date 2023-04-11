@@ -27,6 +27,7 @@ a{
     bottom: 50px;
     position: fixed;
     z-index: 99;
+    cursor: pointer;
 }
 /* header */
 .banner{
