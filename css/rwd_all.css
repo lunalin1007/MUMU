@@ -13,7 +13,6 @@
     h3{
         font-size: 20px;
     }
-
     /* 漢堡選單 */
     .banner{
         height: 0;
@@ -137,7 +136,7 @@
         z-index: 99;
     }
     .topbtn img{
-        width: 70%;
+        width: 110%;
     }
 
 
@@ -162,26 +161,25 @@
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
-        width: 65%;
+        width: 68%;
         margin: 0 auto;
         position: absolute;
         left: calc(50% - 124px);
         bottom: 10px;
     }
     .footer_content img{
-        width: 45px;
+        width: 50px;
     }
     .footer_content .msg{
-        font-size: 12px;
+        font-size: 13px;
         line-height: 1.5;
         color: white;
         letter-spacing: 1px;
-        font-weight: 400;
-        margin: 5px;
+        font-weight: 600;
+        margin: 7px;
     }
     .footer_content .soc{
         display: flex;
-        
     }
     .soc a{
         background-image: url(../icon/40_10.png);
@@ -196,5 +194,4 @@
     .soc .soc_btn1 a:hover{background-position: 0 -30px;}
     .soc .soc_btn2 a:hover{background-position: -30px -30px;}
     .soc .soc_btn3 a:hover{background-position: -60px -30px;}
-
 }
