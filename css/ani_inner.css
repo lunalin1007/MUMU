@@ -216,6 +216,17 @@ section{
 span.rotate{
     transform: rotate(180deg);
 }
+.wrapper .btn_box a{
+    display: block;
+    background-color: #649D6A;
+    color: white;
+    width: 80px;
+    line-height: 2.5;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px auto 0;
+    font-size: 14px;
+}
 
 
    
