@@ -286,13 +286,14 @@ header{
     }
 }
 .service .ser{
+    width: 100%;
     border: 10px solid #649D6A;
     border-radius: 30px;
     background-color: white;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 40px;
+    justify-content: center;
+    margin: 40px auto 0;
 }
 .service .ser span{
     background-image: url(../icon/120_10.svg);

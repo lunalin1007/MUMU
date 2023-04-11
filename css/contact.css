@@ -3,6 +3,41 @@
     margin: 0 auto;
     position: relative;
 }
+.contact_msg{
+    display: flex;
+    width: 80%;
+    margin: 20px auto 40px;
+    justify-content: center;
+    align-items: center;
+}
+.contact_msg .otter{
+    margin-right: 60px;
+}
+.contact_msg .otter img{
+    display: block;
+    width: 120px;
+    animation: otter 5s infinite linear;
+}
+@keyframes otter{
+    0%{
+        transform: rotate(0deg);
+        transform-origin: center;
+    }
+    50%{
+        transform: rotate(360deg);
+        transform-origin: center;
+    }
+    100%{
+        transform: rotate(0deg);
+        transform-origin: center;
+    }
+}
+.message ul li{
+    margin: 15px 0;
+}
+.message li i{
+    margin-right: 5px;
+}
 .wrapper .contact{
     width: 600px;
     margin: 0 auto;

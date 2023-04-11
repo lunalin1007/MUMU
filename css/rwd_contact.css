@@ -9,4 +9,10 @@
         width: 80%;
         margin: 25px auto;
     }
+    .contact_msg .otter{
+        margin-right: 30px;
+    }
+    .contact_msg .otter img{
+        width: 100px;
+    }
 }
