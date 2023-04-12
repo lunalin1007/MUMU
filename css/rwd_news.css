@@ -11,14 +11,14 @@
         padding: 20px 0; 
     }
     .wrapper .list li{
-        width: 66%;
+        width: 70%;
         height: 100%;
         margin: 10px auto;
-        padding-top: 10px;
+        padding:10px;
         border: 8px solid #649D6A; 
     }
     .list li a{
-        width: 90%;
+        width: 100%;
         font-size: 18px;
         letter-spacing: 1px;
         font-weight: 500;

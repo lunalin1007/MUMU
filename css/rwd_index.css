@@ -108,16 +108,16 @@
         margin: 0 0 0 -8px;
     }
     #ham span:before {
-    top: -9px;
+        top: -9px;
     } 
     #ham.open span:before {
-    transform: rotate(-135deg);
+        transform: rotate(-135deg);
     }
     #ham span:after {
-    top: 5px;
+        top: 5px;
     }
     #ham.open span:after {
-    transform: rotate(135deg);
+        transform: rotate(135deg);
     }
 
     .topmain .mainbav{
