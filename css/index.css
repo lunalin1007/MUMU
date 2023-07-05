@@ -42,7 +42,7 @@ header{
     width: 120px;
     position: absolute;
     right: 34%;
-    bottom: 20%;
+    bottom: 16%;
     animation: fox 3s infinite ease-in-out;
 }
 @keyframes fox{
